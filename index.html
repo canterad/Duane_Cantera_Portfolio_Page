@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Duane Cantera Portfolio</title>
+</head>
+
+<body>
+    <!-- Header: Contains a Title and Data section. -->    
+    <header>
+
+        <!-- Header title section contains title, my photo and a sub-title. -->
+        <section class="HeaderTitle">
+            <h1>Duane Cantera</h1> 
+
+            <img class="MyPhoto" src="./assets/images/Duane.jpg" alt="Duane's Photo" /> 
+            <h3 class="HeaderSubTitle">Application Developer</h3>  
+        </section>
+
+        <!-- This section positioned relative so the Header Data Section below can be positioned here. -->
+        <section class="RelativeParent"></section>
+
+        <!-- This is an inline block positioned to the right of the header title section. -->
+        <section class="HeaderBlock"></section>
+
+        <!-- This is the Header Data section.  It is positioned absolute to its relative parent. -->
+        <section class="HeaderData">
+
+            <!-- Navagation section.  Contains links that go to different sections of the page
+                 and opens my resume in a new tab. -->
+            <nav>
+
+                <!-- Unordered List element, contains link items. -->
+                <ul>
+                    <li>
+                        <a href="#AboutMeData">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#WorkData">Work</a>
+                    </li>
+                    <li>
+                        <a href="#ContactMeData">Contact Me</a>
+                    </li>
+                    <li>
+                        <a href="./assets/images/DuaneCanteraResume2018.html" target="_blank" rel="noopener noreferrer">Resume</a>
+                    </li>                
+                </ul>            
+            </nav>
+    </section>
+    </header>
+
+    <!-- This section positioned relative so the Title Section below can be positioned here.-->
+    <main class="RelativeParent">
+
+        <!-- This is an inline block positioned to the left of the About Me data section. -->
+        <section class="TitleBlock"></section>
+
+        <!-- This is the About Me Title section.  It is positioned absolute to its relative parent. -->
+        <section class="Title"><h2>About<br>Me</h2></section>
+
+        <!-- This is the About Me Data Section.  Contains a paragraph element which contains my info. -->
+        <section id="AboutMeData" class="AboutMeData">
+            <p>I currently work at Middlesex Community College as a Web Programmer/Developer.  I have developed some new applications
+               for the college using Microsoft Technologies.  I have written a couple applications using ASP.NET Core MVC 2.  These are
+               Model, View and Controller applications similar to Ruby and Rails development.<br><br>I have also created some new Argos 
+               data blocks and set up schedules that can be run to automate email delivery for dropped courses, cancelled courses and 
+               midterm grades.<br><br>I have also been involved in setting up the 25Live Pro application which the college uses for 
+               booking events and scheduling classes.  I was involved in setting up the system for the college facilities department 
+               so facilities can be added to an event and the facilities department will receive emails and a daily scheduled report 
+               about events that require facilities.<br><br>I decided to take the UNH Boot Camp class because I wanted to brush up my 
+               skills and learn some server side technologies.  The college is thinking about redesigning their Student Portal.  If 
+               and when a decision is made hopefully I will be able to help in the design and development work for the new Student Portal.
+            </p>
+        </section>  
+    </main>      
+
+    <!-- This section positioned relative so the Title Section below can be positioned here. -->
+    <section class="RelativeParent">
+        
+        <!-- This is an inline block positioned to the left of the Work data section. -->
+        <section class="TitleBlock"></section>
+
+        <!-- This is the Work Title section.  It is positioned absolute to its relative parent. -->
+        <section class="Title"><h2>Work</h2></section>
+
+        <!-- This is the Work Data Section.  Contains a featured work item and four sub work items. -->
+        <section id="WorkData" class="WorkData">
+
+            <!-- This is the work featured section. -->
+            <section id="FeaturedWork" class = "FeaturedWork">
+                <a href="https://canterad.github.io/01-HTML-Git-CSS-Homework/" target="_blank" rel="noopener noreferrer" class="href_FeaturedWork"></a>
+                <div class="WorkTag">
+                    <h3>01-HomeWork</h3>
+                    <p class="ProjectDescription">Code Refractor</p>
+                </div>
+            </section>
+
+            <!-- This is a work row that will contain two sub work items. -->
+            <section class="WorkRow1">
+
+                <!-- Sub Work Item 1 -->
+                <div id="SmallWorkOne" class="SmallWorkOne">
+                    <a href="https://canterad.github.io/01-HTML-Git-CSS-Homework/" target="_blank" rel="noopener noreferrer" class="href_SmallWorkOne"></a>
+                    <div class="WorkTag">
+                        <h3>01-HomeWork</h3>
+                        <p class="ProjectDescription">Code Refractor</p>
+                    </div>
+                </div>
+
+                <!-- Sub Work Item 2 -->
+                <div id="SmallWorkTwo" class="SmallWorkTwo">
+                    <a href="https://canterad.github.io/01-HTML-Git-CSS-Homework/" target="_blank" rel="noopener noreferrer" class="href_SmallWorkTwo"></a>
+                    <div class="WorkTag">
+                        <h3>01-HomeWork</h3>
+                        <p class="ProjectDescription">Code Refractor</p>
+                    </div>                    
+                </div> 
+            </section>  
+            
+            <!-- This is a work row that will contain two sub work items. -->
+            <section class="WorkRow2">
+
+                <!-- Sub Work Item 3 -->
+                <div id="SmallWorkThree" class="SmallWorkThree">
+                    <a href="https://canterad.github.io/01-HTML-Git-CSS-Homework/" target="_blank" rel="noopener noreferrer" class="href_SmallWorkThree"></a>
+                    <div class="WorkTag">
+                        <h3>01-HomeWork</h3>
+                        <p class="ProjectDescription">Code Refractor</p>
+                    </div>                    
+                </div>
+
+                <!-- Sub Work Item 4-->
+                <div id="SmallWorkFour" class="SmallWorkFour">
+                    <a href="https://canterad.github.io/01-HTML-Git-CSS-Homework/" target="_blank" rel="noopener noreferrer" class="href_SmallWorkFour"></a>
+                    <div class="WorkTag">
+                        <h3>01-HomeWork</h3>
+                        <p class="ProjectDescription">Code Refractor</p>
+                    </div>                    
+                </div> 
+            </section>
+          </section>         
+    </section>      
+
+    <!-- Footer Section - This section positioned relative so the Title Section below can be positioned here. -->
+    <footer class="ContactMeTitleParent">
+
+        <!-- This is an inline block positioned to the left of the Contact Me data section. -->
+        <section class="TitleBlock"></section>
+
+        <!-- This is the Contact Me Title section.  It is positioned absolute to its relative parent. -->
+        <section class="Title"><h2>Contact<br>Me</h2></section>
+
+        <!-- his is the Contact Me Data Section.  Contains navagation links for phone, email and web sites. -->
+        <section id="ContactMeData" class="ContactMeData">
+
+            <!-- Navagation Section - Contains unorder list of hyper links. -->
+            <nav>
+             
+                <!-- Unordered List Element -->
+                <ul>
+                    <li>
+                        <a href="tel:1-781-458-3151">781.438.3151</a>
+                    </li>
+                    <li>
+                        <a href="mailto:duane.cantera@comcast.net">duane.cantera@comcast.net</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/duanecantera" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </li>      
+                 </ul>            
+            </nav>            
+        </section>  
+    </footer>  
+</body>
+</html>

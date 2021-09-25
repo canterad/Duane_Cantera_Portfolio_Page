@@ -1,0 +1,627 @@
+/* Universal Selector: Set the box-sizing to border-box, making the padding and border included in the width and height of a box.
+   Set all padding and margins to zero. */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header Element: Contains a background image. */
+header{
+    border: solid;
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px; 
+    background-image: url("../images/Header.jpg");
+    background-color:darkgreen;
+    background-size: cover;
+    background-position: bottom;  
+    background-repeat: no-repeat;
+}
+
+/* Class for the Header Title Section.  Set up for flexbox column with no wrapping and spaced evenly. */
+.HeaderTitle{
+    display: inline-block; 
+    width: 20%;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;   
+    justify-content: space-evenly;  
+   
+}
+
+/* Class for the Header Block Section. Created an inline-block to take up the Data area for the right side of the section.*/
+.HeaderBlock{
+    display: inline-block; 
+    width: 70%;     
+}
+
+/* Class for the Header Data Section. This will be position to the relative parent element. */
+.HeaderData{
+    position: absolute; 
+    top: 0; 
+    left: 20%; 
+    width: 70%; 
+    height: 240px;
+}
+
+/* Header h1 tag: Positioned and changed the colors of my name. */
+header h1{
+    color: white;
+     margin-top: 5px;
+    float: left; 
+    margin-left: 35px;
+    text-align: left;
+}
+
+/* Class for the image element: Displays my photo. */
+.MyPhoto{
+    display:inline-block;
+    width: 140px;
+    height: 140px;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+/* Class for sub-title: Displays my job title. */
+.HeaderSubTitle{
+    display: inline-block;
+    color: white;
+    padding: 5px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+/* Header Navigation element. */
+header nav {   
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px; 
+}
+
+/* Header Navigation unordered list: Set up for flexbox row with no wrapping and align item centered.  No bullets displayed. */
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    flex-wrap: nowrap;   
+    align-items: center;       
+    margin: 0;
+    padding: 0; 
+}
+
+/* List elements: Margin and padding values set. */
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+    padding: 5px;
+ }
+
+ /* Navigation Links: Changed the color of the header navigation links. */
+header nav ul li a {
+    color: white;
+}
+
+/* RelativeParent Class: Set as a relative element so the other elements will find this as its parent element.*/
+.RelativeParent{
+    position:relative; 
+    top: 0; 
+    left: 0;
+}
+
+/* Title Block Class: Created an inline-block to take up the Title area for the left side of the section. */
+.TitleBlock{
+    display: inline-block; 
+    width: 10%;    
+}
+
+/* Title Class: Position absolute so will be positioned where the Relative Parent class was used above.  
+   This was done so the title text would not move down the page when the size of the data sections inline-block
+   height expanded. */
+.Title {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 10%; 
+    text-align: right; 
+}
+
+/* About Me Data Class: Styled and positioned the inline-block element that contains the About Me Data. */
+.AboutMeData {
+    display: inline-block;
+    width: 80%;
+    border-left: solid;
+    padding-left: 20px;
+    padding-right: 5px;
+    margin-bottom: 30px;
+    position: relative;
+        left: 10px;
+}
+
+/* Work Data Class: Class to style the inline-block element that contains the Work Data. */
+.WorkData {
+    display: inline-block;
+    width: 80%;
+    border-left: solid;
+    padding-left: 20px;
+    margin-bottom: 30px;    
+    position: relative;
+        left: 10px;
+}
+
+/* Work Tag Class: Used on all of the work items. */
+.WorkTag{
+    display: inline-block;
+    background-color: lightgray;
+    padding: 10px;
+    position: absolute;
+        bottom: 0;
+    margin-bottom: 20px;
+}
+
+/* Project Description Class: Used on all of the work items. */
+.ProjectDescription{
+    margin-top: 10px;
+}
+
+/* Featured Work Item Class: Background image loaded and set to opacity value of 0.5  */
+.FeaturedWork{
+    height: 500px;
+    width: 100%;
+    margin-bottom: 15px; 
+    background-image: url("../images/Featured.jpg");
+    background-color:gold;
+    background-size: cover;
+    background-position: center;  
+    background-repeat: no-repeat;
+    opacity: 0.5;   
+    position: relative; 
+    border: 5px solid burlywood;
+}
+
+/* CSS After Selector used for the Featured Work Item to set the Hyper-link to span the width and height of the background image. */
+.href_FeaturedWork:after {
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    content:"";
+   }
+
+/* CSS Hover Selector: Used to change the opacity value to make the background image look brighter when the mouse hovers over the
+/* background image. */
+#FeaturedWork:hover{
+    opacity: 1;    
+}
+
+/* Work Row 1 class: Set up to contain two work elements.  Setup for flexbox row with wrapping and space between content. */
+.WorkRow1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;       
+}
+
+/* Small Work One: Class for first small work item. Background imaged loaded and set opacity value to 0.5 */
+.SmallWorkOne{
+    display: inline-block; 
+    width: 50%; height: 200px; 
+    border: solid;
+    background-image: url("../images/Work1.jpg");
+    background-color:red;    
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    opacity: 0.5;   
+    position: relative; 
+    border: 5px solid burlywood; 
+}
+
+/* CSS After Selector used for the Work One Item to set the Hyper-link to span the width and height of the background image. */
+.href_SmallWorkOne:after {
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    content:"";
+   }
+
+/* CSS Hover Selector: Used to change the opacity value to make the background image look brighter when the mouse hovers over the
+/* background image. */
+#SmallWorkOne:hover{
+    opacity: 1;      
+}
+
+/* Small Work Two: Class for second small work item. Background imaged loaded and set opacity value to 0.5 */
+.SmallWorkTwo{
+    display: inline-block; 
+    width: 50%; height: 200px; 
+    border: solid;
+    background-image: url("../images/Work2.jpg");
+    background-color:blue;
+    background-size: cover;
+    background-position: center;  
+    background-repeat: no-repeat;
+    opacity: 0.5;   
+    position: relative;   
+    border: 5px solid burlywood;  
+}
+
+/* CSS After Selector used for the Work Two Item to set the Hyper-link to span the width and height of the background image. */
+.href_SmallWorkTwo:after {
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    content:"";
+   }
+
+   /* CSS Hover Selector: Used to change the opacity value to make the background image look brighter when the mouse hovers over the
+/* background image. */
+#SmallWorkTwo:hover{
+    opacity: 1;      
+}
+
+/* Work Row 2 class: Set up to contain two work elements. Setup for flexbox row with wrapping and space between content. */
+.WorkRow2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;       
+}
+
+/* Small Work Three: Class for third small work item. Background imaged loaded and set opacity value to 0.5 */
+.SmallWorkThree{
+    display: inline-block; 
+    width: 50%; height: 200px; 
+    border: solid;
+    background-image: url("../images/Work3.jpg");
+    background-color:orange;
+    background-size: cover;
+    background-position: center;  
+    background-repeat: no-repeat;
+    opacity: 0.5;   
+    position: relative; 
+    border: 5px solid burlywood;  
+}
+
+/* CSS After Selector used for the Work Three item to set the Hyper-link to span the width and height of the background image. */
+.href_SmallWorkThree:after {
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    content:"";
+   }
+
+/* CSS Hover Selector: Used to change the opacity value to make the background image look brighter when the mouse hovers over the
+/* background image. */
+#SmallWorkThree:hover{
+    opacity: 1;      
+}
+
+/* Small Work Four: Class for fourth small work item. Background imaged loaded and set opacity value to 0.5 */
+.SmallWorkFour{
+    display: inline-block; 
+    width: 50%; height: 200px; 
+    border: solid;
+    background-image: url("../images/Work4.png");
+    background-color: brown;
+    background-size: cover;
+    background-position: center;  
+    background-repeat: no-repeat;
+    opacity: 0.5;   
+    position: relative; 
+    border: 5px solid burlywood;  
+}
+
+/* CSS After Selector used for the Work Four Item to set the Hyper-link to span the width and height of the background image. */
+.href_SmallWorkFour:after {
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    content:"";
+}
+
+/* CSS Hover Selector: Used to change the opacity value to make the background image look brighter when the mouse hovers over the
+/* background image. */
+#SmallWorkFour:hover{
+    opacity: 1;      
+}
+
+/* RelativeParent Class: Set as a relative element so the Title class will find this as its parent element.*/
+.ContactMeTitleParent{
+    position:relative; 
+    top: 0; 
+    left: 0;
+    margin-bottom: 35px;
+}
+
+/* Contact Me Data Class: Class to style the inline-block element that contains the Contact Me Data. */
+.ContactMeData {
+    display: inline-block;
+    width: 80%;
+    border-left: solid;
+    margin-bottom: 15px;    
+    padding-left: 20px;
+    position: relative;
+        left: 10px;
+}
+
+/* Footer Navigation Element */
+footer nav {  
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px; 
+  } 
+
+/* Footer Navigation Unordered List Element: No bullets displayed. Setup for flexbox row with no wrapping, space
+   between content and item centered. */
+footer nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;  
+    flex-wrap: nowrap;   
+}
+
+/* Footer Navigation Unordered List Item */
+footer nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+ }
+
+ /* List Item Link: Changed the background color of the Footer Navigation Links. */
+footer nav ul li a {
+    color: black;
+}
+
+/**********************************************************************************************************
+* MEDIA QUERY SECTION * I set up alot of these to adjust the max-width by 10 pixels at a time for my photo.
+**********************************************************************************************************/
+
+@media screen and (max-width: 1525px){ 
+    .MyPhoto{
+        max-width: 150px;
+    }
+}
+
+@media screen and (max-width: 1450px){ 
+    .MyPhoto{
+        max-width: 160px;
+    }
+}
+
+@media screen and (max-width: 1375px){ 
+    .MyPhoto{
+        max-width: 170px;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .MyPhoto{
+        max-width: 180px;
+    } 
+}
+
+@media screen and (max-width: 1225px){    
+    .MyPhoto{
+        max-width: 190px;
+    } 
+}
+
+@media screen and (max-width: 1150px){ 
+    .MyPhoto{
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-width: 1075px){ 
+    .MyPhoto{
+        max-width: 210px;
+    }
+}
+
+@media screen and (max-width: 1000px){ 
+    .MyPhoto{
+        max-width: 220px;
+        margin-left: 10px;        
+    }
+}
+
+@media screen and (max-width: 925px){ 
+    .MyPhoto{
+        max-width: 230px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .MyPhoto{
+        max-width: 240px;
+    } 
+}
+
+@media screen and (max-width: 775px){ 
+    .MyPhoto{
+        max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 750px){ 
+
+    /* Changed the flexbox direction to column for the footer navigation unordered list. */
+    footer nav ul {
+        flex-direction: column;
+    }
+
+    /* Set the footer navigation width to auto. */
+    footer nav {
+        width: auto;  
+    }  
+
+    /* Changed the flexbox direction to column for the header navigation unordered list. */
+    header nav ul {
+        flex-direction: column;
+    }
+
+    /* Set the header navigation width to auto. */
+    header nav {
+        width: auto;  
+    }  
+}
+
+@media screen and (max-width: 700px){
+
+    /* Changed the font size for the titles in the left panel. */
+    .Title {
+        font-size: 10px;  
+    }  
+
+    .MyPhoto{
+        max-width: 260px;
+    }    
+}
+
+@media screen and (max-width: 625px){ 
+    .MyPhoto{
+        max-width: 270px;
+    }
+}
+
+@media screen and (max-width: 550px){ 
+    .MyPhoto{
+        max-width: 280px;
+    }
+}
+
+@media screen and (max-width: 515px){ 
+
+    /* Decreased the padding and margins on the left side for the data section on the right panel. */
+    .AboutMeData {
+       padding-left: 5px;
+       margin-left: 5px;
+    }   
+    
+    .WorkData {
+        padding-left: 5px;
+        margin-left: 5px; 
+    }
+    
+    .ContactMeData {
+        padding-left: 5px;
+        margin-left: 5px; 
+    }    
+}
+
+@media screen and (max-width: 475px){ 
+    .MyPhoto{
+        max-width: 290px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    
+    /* Decreased the left margin to move my photo a little to the left. */
+    .MyPhoto{
+        max-width: 300px;
+        margin-left: 5px;
+    }
+
+    /* Moved the Header Navigation Unorder list over to the right so it will not bump into my name. */
+    header nav ul {
+        position: relative;
+            left: 60px;
+    }    
+}
+
+@media screen and (max-width: 414px){
+
+    /* Changed the font size of the text in the title, left panel down to 10 px. */
+    .Title {
+        font-size: 10px;  
+    }  
+}
+
+@media screen and (max-width: 325px){ 
+    .MyPhoto{
+        max-width: 310px;
+    }
+}
+
+@media screen and (max-width: 320px){
+
+    /* Moving the data items in the right panel over to the right and changing the thickness of the solid black border. */
+    .AboutMeData {
+         position: relative;
+        left: 15px;    
+        border-left: 1px solid black;  
+    }  
+
+    .WorkData {
+        position: relative;
+        left: 15px; 
+        border-left: 1px solid black; 
+    }
+
+    .ContactMeData {
+        position: relative;
+        left: 15px;
+        border-left: 1px solid black;    
+    }
+
+    /* Changed the size of the text font to 8 pixels for the titles in the left panel. */
+    .Title {
+        font-size: 8px;  
+    }  
+
+    /* Decreased the footer navigation unordered list items margin value so the items will be move over to the left. */
+    footer nav ul li {
+        margin-left: 10px;
+    }
+
+    /* Decreased the font size of the footer navigation text so everything will fit in a smaller viewport. */
+    footer nav { 
+        font-size: 18px;         
+    }    
+}
+
+@media screen and (max-width: 280px){
+
+    /* for my name and sub title in the header section I moved it over to the left and decreased the font size */
+    header h1{
+        margin-left: 0;
+        font-size: 16px;
+    }
+
+    .HeaderSubTitle{
+        margin-left: 0;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 250px){ 
+    .MyPhoto{
+        max-width: 320px;
+    }
+}
+
+@media screen and (max-width: 175px){ 
+    .MyPhoto{
+        max-width: 330px;
+    }
+}
+
+@media screen and (max-width: 100px){ 
+    .MyPhoto{
+        max-width: 340px;
+    }
+}
