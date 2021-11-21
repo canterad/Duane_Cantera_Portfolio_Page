@@ -170,10 +170,10 @@ header nav ul li a {
     height: 500px;
     width: 100%;
     margin-bottom: 15px; 
-    background-image: url("../images/Featured.jpg");
+    background-image: url("../images/MarvelImage.jpg");
     background-color:gold;
     background-size: cover;
-    background-position: center;  
+    background-position: top;  
     background-repeat: no-repeat;
     opacity: 0.5;   
     position: relative; 
@@ -209,10 +209,10 @@ header nav ul li a {
     display: inline-block; 
     width: 50%; height: 200px; 
     border: solid;
-    background-image: url("../images/Work1.jpg");
+    background-image: url("../images/WeatherDashboardImage.jpg");
     background-color:red;    
     background-size: cover;
-    background-position: center; 
+    background-position: top; 
     background-repeat: no-repeat; 
     opacity: 0.5;   
     position: relative; 
@@ -240,7 +240,7 @@ header nav ul li a {
     display: inline-block; 
     width: 50%; height: 200px; 
     border: solid;
-    background-image: url("../images/Work2.jpg");
+    background-image: url("../images/WorkDaySchedulerImage.jpg");
     background-color:blue;
     background-size: cover;
     background-position: center;  
@@ -279,7 +279,7 @@ header nav ul li a {
     display: inline-block; 
     width: 50%; height: 200px; 
     border: solid;
-    background-image: url("../images/Work3.jpg");
+    background-image: url("../images/CodingQuizImage.jpg");
     background-color:orange;
     background-size: cover;
     background-position: center;  
@@ -310,7 +310,7 @@ header nav ul li a {
     display: inline-block; 
     width: 50%; height: 200px; 
     border: solid;
-    background-image: url("../images/Work4.png");
+    background-image: url("../images/PasswordImage.jpg");
     background-color: brown;
     background-size: cover;
     background-position: center;  
