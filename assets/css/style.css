@@ -240,10 +240,10 @@ header nav ul li a {
     display: inline-block; 
     width: 50%; height: 200px; 
     border: solid;
-    background-image: url("../images/WorkDaySchedulerImage.jpg");
+    background-image: url("../images/NoteTakerImage.jpg");
     background-color:blue;
     background-size: cover;
-    background-position: center;  
+    background-position: top;  
     background-repeat: no-repeat;
     opacity: 0.5;   
     position: relative;   
@@ -310,10 +310,10 @@ header nav ul li a {
     display: inline-block; 
     width: 50%; height: 200px; 
     border: solid;
-    background-image: url("../images/PasswordImage.jpg");
+    background-image: url("../images/TechBlogImage.jpeg");
     background-color: brown;
     background-size: cover;
-    background-position: center;  
+    background-position: top;  
     background-repeat: no-repeat;
     opacity: 0.5;   
     position: relative; 
